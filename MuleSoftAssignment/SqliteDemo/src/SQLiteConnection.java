@@ -6,16 +6,14 @@ import java.sql.SQLException;
 import java.sql.Statement;  
    
 public class SQLiteConnection{  
-     /** 
-     * Connect to a sample database 
-     */  
+    
 	
 		   
 		public static void createNewTable() {  
-	        // SQLite connection string  
+	         
 	        String url = "jdbc:sqlite:C://sqlite/smd.db";  
 	          
-	        // SQL statement for creating a new table  
+	      
 	        String sql = "create table movie_s(mname varchar(20),hero varchar(20),heroine varchar(20),Director varchar(20),Year varchar(4))";  
 	          
 	        try{  
@@ -41,9 +39,7 @@ public class SQLiteConnection{
 	        }  
 	    }  
 	   
-	    /** 
-	     * @param args the command line arguments 
-	     */  
+	   
 	    public static void main(String[] args) {  
 	        createNewTable();  
 	    } 
